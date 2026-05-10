@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameShield JA | Report Incident</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">GameShield <span>JA</span></a>
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
+        ☰
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="learn.html">Learn</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="report.html" class="active">Report</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-heading">
+        <h1>Report a Cyber Incident</h1>
+        <p>Use this form to describe suspicious gaming-related incidents.</p>
+      </div>
+
+      <form id="report-form" class="card report-form" novalidate>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="threatType">Threat Type</label>
+          <select id="threatType" name="threatType" required>
+            <option value="">Select a threat</option>
+            <option value="phishing">Phishing</option>
+            <option value="account-hacking">Account Hacking</option>
+            <option value="malware">Malware</option>
+            <option value="fake-giveaway">Fake Giveaway</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Incident Description</label>
+          <textarea id="description" name="description" rows="6" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="evidence">Upload Evidence (optional)</label>
+          <input id="evidence" name="evidence" type="file" accept=".png,.jpg,.jpeg,.pdf,.txt" />
+          <small>Allowed types: PNG, JPG, JPEG, PDF, TXT. Max size: 2MB.</small>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <input id="consent" name="consent" type="checkbox" required />
+          <label for="consent">I confirm that the information provided is accurate to the best of my knowledge.</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit Report</button>
+      </form>
+
+      <div id="report-message" class="alert hidden" aria-live="polite"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>&copy; 2026 GameShield JA. Report suspicious activity safely.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

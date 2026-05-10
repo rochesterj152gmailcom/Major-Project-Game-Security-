@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameShield JA | Learn</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="learn-page">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">GameShield <span>JA</span></a>
+
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
+        ☰
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="index.html">HOME</a>
+        <a href="learn.html" class="active">LEARN</a>
+        <a href="quiz.html">QUIZ</a>
+        <a href="report.html">REPORT</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero hero-large">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="assets/videos/learnvideo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <p class="eyebrow">Learn Safe Gaming Habits</p>
+            <h1>
+              Understand The Most Common Online Threats
+              And How To Avoid Them
+            </h1>
+
+            <p class="hero-copy">
+              This page helps gamers learn the basics of phishing, password protection,
+              multi-factor authentication, and safe browsing. The goal is to make cyber
+              security awareness practical, simple, and easy to apply in everyday gaming.
+            </p>
+
+            <p class="hero-copy">
+              Instead of only reading definitions, users should leave this page knowing
+              what warning signs to watch for and what habits to build to reduce risk.
+            </p>
+
+            <div class="button-group">
+              <a href="#topics" class="btn btn-primary">Explore Topics</a>
+              <a href="#simulation" class="btn btn-secondary">Try Simulation</a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-panel"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-curve">
+        <svg viewBox="0 0 1440 180" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0,60 C240,120 480,180 720,170 C960,160 1200,110 1440,40 L1440,180 L0,180 Z"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="intro-strip">
+      <div class="container">
+        <h3>
+          Good cyber security habits help gamers avoid scams, protect accounts,
+          reduce data exposure, and respond better to suspicious activity.
+        </h3>
+      </div>
+    </section>
+
+    <!-- LEARNING CARDS -->
+    <section class="section learn-card-section" id="topics">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Awareness Content</p>
+          <h2>Learn Through Practical Topics</h2>
+          <p>
+            Explore key areas of cyber security awareness through short, focused learning cards
+            designed to help gamers understand risks and safer online habits.
+          </p>
+        </div>
+
+        <div class="learn-card-grid">
+          <article class="learn-info-card">
+            <img src="assets/images/phishing.jpg" alt="Person working on a computer representing phishing awareness" class="learn-card-image" />
+            <div class="learn-card-overlay">
+              <p class="learn-card-label">Guide</p>
+              <h3>How to recognize phishing attempts</h3>
+              <p>
+                Learn how fake links, urgent reward messages, and suspicious login pages
+                are used to trick gamers into giving away account details.
+              </p>
+              <a href="#simulation" class="learn-card-arrow" aria-label="Read more about phishing awareness">→</a>
+            </div>
+          </article>
+
+          <article class="learn-info-card">
+            <img src="assets/images/mfa1.jpg" alt="Person using a device representing password security" class="learn-card-image" />
+            <div class="learn-card-overlay">
+              <p class="learn-card-label">Guide</p>
+              <h3>Why strong passwords and MFA matter</h3>
+              <p>
+                Understand why reused passwords are dangerous and how multi-factor authentication
+                adds an extra layer of protection to gaming accounts.
+              </p>
+              <a href="#password-mfa" class="learn-card-arrow" aria-label="Read more about password and MFA security">→</a>
+            </div>
+          </article>
+
+          <article class="learn-info-card">
+            <img src="assets/images/learn3.jpg" alt="Cyber security themed image representing safe browsing and suspicious links" class="learn-card-image" />
+            <div class="learn-card-overlay">
+              <p class="learn-card-label">Guide</p>
+              <h3>Safe browsing and suspicious links</h3>
+              <p>
+                Learn how unsafe downloads, strange pop-ups, and suspicious links can expose
+                users to malware, scams, and account compromise.
+              </p>
+              <a href="#safe-browsing" class="learn-card-arrow" aria-label="Read more about safe browsing">→</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DETAIL SECTIONS -->
+    <section class="section action-section" id="password-mfa">
+      <div class="container action-grid">
+        <div class="action-text">
+          <p class="section-tag">Password and MFA</p>
+          <h2>Stronger account protection starts with basic habits</h2>
+          <p>
+            One of the easiest ways to reduce account compromise is to stop reusing passwords
+            and enable multi-factor authentication wherever possible. Even if a password is stolen,
+            MFA can still help block attackers.
+          </p>
+        </div>
+
+        <div class="action-cards">
+          <div class="small-feature-card">
+            <h3>Use unique passwords</h3>
+            <p>Each account should have its own password so one breach does not affect everything else.</p>
+          </div>
+          <div class="small-feature-card">
+            <h3>Turn on MFA</h3>
+            <p>Add a second layer of protection using an authenticator app, code, or approval prompt.</p>
+          </div>
+          <div class="small-feature-card">
+            <h3>Protect your email too</h3>
+            <p>Your email account is often the recovery point for your gaming accounts, so secure it first.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTINUOUS GRADIENT WRAP -->
+    <div class="learn-gradient-wrap">
+      <section class="section threats-section" id="safe-browsing">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-tag">Safe Browsing</p>
+            <h2>Think before you click</h2>
+            <p>
+              Safe browsing means slowing down and checking whether a site, file, or message looks legitimate
+              before you interact with it.
+            </p>
+          </div>
+
+          <div class="grid cards-3">
+            <article class="card threat-card">
+              <div class="threat-icon">🌐</div>
+              <h3>Check URLs carefully</h3>
+              <p>Look for spelling tricks, fake domains, and unusual endings before entering any login details.</p>
+            </article>
+
+            <article class="card threat-card">
+              <div class="threat-icon">⬇️</div>
+              <h3>Avoid risky downloads</h3>
+              <p>Only download games, updates, or tools from official stores and trusted sources.</p>
+            </article>
+
+            <article class="card threat-card">
+              <div class="threat-icon">🚨</div>
+              <h3>Ignore fake urgency</h3>
+              <p>Messages that pressure you to act immediately are often designed to make you panic and click.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SIMULATION -->
+      <section class="section threats-section" id="simulation">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-tag">Interactive Learning</p>
+            <h2>Phishing Simulation</h2>
+            <p>
+              Read the sample message below and decide whether it looks trustworthy.
+            </p>
+          </div>
+
+          <section class="card simulation">
+            <article class="fake-email">
+              <p><strong>From:</strong> support@epic-prizes-bonus.net</p>
+              <p><strong>Subject:</strong> Your account won a rare prize!</p>
+              <p>
+                Congratulations gamer. Click the link below within 10 minutes to claim your
+                exclusive reward before your account is locked.
+              </p>
+              <button id="phishing-link" class="btn btn-danger">Claim Reward Now</button>
+            </article>
+
+            <div id="simulation-result" class="alert hidden" aria-live="polite"></div>
+          </section>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>&copy; 2026 GameShield JA. Learn and stay safe online.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

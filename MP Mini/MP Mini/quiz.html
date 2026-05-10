@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameShield JA | Quiz</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">GameShield <span>JA</span></a>
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
+        ☰
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="index.html">HOME</a>
+        <a href="learn.html">LEARN</a>
+        <a href="quiz.html" class="active">Quiz</a>
+        <a href="report.html">Report</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-heading">
+        <h1>Cyber Awareness Quiz</h1>
+        <p>Answer the questions below and get your score instantly.</p>
+      </div>
+
+      <form id="quiz-form" class="card quiz-form">
+        <fieldset>
+          <legend>1. What is phishing?</legend>
+          <label><input type="radio" name="q1" value="a" /> A way to upgrade your internet speed</label>
+          <label><input type="radio" name="q1" value="b" /> A scam designed to steal sensitive information</label>
+          <label><input type="radio" name="q1" value="c" /> A type of gaming headset</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>2. Which password is strongest?</legend>
+          <label><input type="radio" name="q2" value="a" /> password123</label>
+          <label><input type="radio" name="q2" value="b" /> javaughn</label>
+          <label><input type="radio" name="q2" value="c" /> C!oud-Game#92Secure</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>3. Why should you enable MFA?</legend>
+          <label><input type="radio" name="q3" value="a" /> It adds another layer of account protection</label>
+          <label><input type="radio" name="q3" value="b" /> It reduces screen brightness</label>
+          <label><input type="radio" name="q3" value="c" /> It increases game speed</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>4. Which link is most suspicious?</legend>
+          <label><input type="radio" name="q4" value="a" /> https://store.steampowered.com</label>
+          <label><input type="radio" name="q4" value="b" /> https://secure-play-bonus-free.ru/login</label>
+          <label><input type="radio" name="q4" value="c" /> https://www.playstation.com</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>5. What is the safest place to download games or updates?</legend>
+          <label><input type="radio" name="q5" value="a" /> Official stores and trusted websites</label>
+          <label><input type="radio" name="q5" value="b" /> Random pop-up ads</label>
+          <label><input type="radio" name="q5" value="c" /> Unknown file-sharing links</label>
+        </fieldset>
+
+        <button type="submit" class="btn btn-primary">Submit Quiz</button>
+      </form>
+
+      <section id="quiz-result" class="alert hidden" aria-live="polite"></section>
+
+      <section class="card stats-card">
+        <h2>Your Learning Progress</h2>
+        <p><strong>Last Score:</strong> <span id="last-score">No score yet</span></p>
+        <p><strong>Attempts:</strong> <span id="attempt-count">0</span></p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>&copy; 2026 GameShield JA. Test your awareness.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
